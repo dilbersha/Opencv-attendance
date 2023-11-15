@@ -49,8 +49,7 @@ def process_uploaded_photo(img):
     for result in results_list:
         print(f"Image: {result['filename']}, Match: {result['match']}, Distance: {round(result['distance'], 2)}")
 
-    # You can further process the results as needed
-    # For example, return a list of matching images
+
     matching_images = [result['filename'] for result in results_list if result['match']]
 
     return matching_images
